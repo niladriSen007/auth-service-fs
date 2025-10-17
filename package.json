@@ -3,6 +3,7 @@
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
+    "type": "module",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "format:check": "pnpm exec prettier . --check",
@@ -26,7 +27,8 @@
         "typescript-eslint": "^8.46.1"
     },
     "dependencies": {
-        "@types/node": "^24.8.1"
+        "@types/node": "^24.8.1",
+        "dotenv": "^17.2.3"
     },
     "lint-staged": {
         "*.ts": [
