@@ -1,13 +1,37 @@
 {
-  "name": "auth-service",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "Niladri Sen",
-  "license": "ISC",
-  "packageManager": "pnpm@10.18.2"
+    "name": "auth-service",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "format:check": "pnpm exec prettier . --check",
+        "format:fix": "pnpm exec prettier . --write",
+        "lint:check": "pnpm eslint .",
+        "lint:fix": "pnpm eslint . --fix",
+        "build": "tsc",
+        "prepare": "husky"
+    },
+    "keywords": [],
+    "author": "Niladri Sen",
+    "license": "ISC",
+    "packageManager": "pnpm@10.18.2",
+    "devDependencies": {
+        "@eslint/js": "^9.37.0",
+        "eslint": "^9.37.0",
+        "husky": "^9.1.7",
+        "lint-staged": "^16.2.4",
+        "prettier": "3.6.2",
+        "typescript": "^5.9.3",
+        "typescript-eslint": "^8.46.1"
+    },
+    "dependencies": {
+        "@types/node": "^24.8.1"
+    },
+    "lint-staged": {
+        "*.ts": [
+            "pnpm format:fix",
+            "pnpm lint:fix"
+        ]
+    }
 }
