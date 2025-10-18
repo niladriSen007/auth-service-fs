@@ -14,6 +14,6 @@ app.get('/', (req, res) => {
     try {
         res.status(200).send('Auth Service is running!');
     } catch {
-        throw new InternalServerError('An unexpected error occurred.');
+        throw new InternalServerError();
     }
 });
