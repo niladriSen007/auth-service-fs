@@ -1,12 +1,10 @@
-import { StatusCodes } from 'http-status-codes';
-
 export enum HttpStatusCode {
-    OK = StatusCodes.OK,
-    CREATED = StatusCodes.CREATED,
-    BAD_REQUEST = StatusCodes.BAD_REQUEST,
-    UNAUTHORIZED = StatusCodes.UNAUTHORIZED,
-    FORBIDDEN = StatusCodes.FORBIDDEN,
-    NOT_FOUND = StatusCodes.NOT_FOUND,
-    INTERNAL_SERVER_ERROR = StatusCodes.INTERNAL_SERVER_ERROR,
-    CONFLICT = StatusCodes.CONFLICT,
+    OK = 200,
+    CREATED = 201,
+    BAD_REQUEST = 400,
+    UNAUTHORIZED = 401,
+    FORBIDDEN = 403,
+    NOT_FOUND = 404,
+    INTERNAL_SERVER_ERROR = 500,
+    CONFLICT = 409,
 }
