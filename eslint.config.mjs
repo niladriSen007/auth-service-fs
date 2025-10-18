@@ -14,7 +14,7 @@ export default defineConfig(
             'eslint.config.mjs',
             'src/config',
             'jest.config.cjs',
-            'src/middleware'
+            'src/middleware',
         ],
     },
     {
