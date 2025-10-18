@@ -6,9 +6,9 @@ module.exports = {
     transform: {
         '^.+\\.ts$': [
             'ts-jest',
-             {
-        tsconfig: 'tsconfig.jest.json' // 👈 use this custom TS config
-      }
+            {
+                tsconfig: 'tsconfig.jest.json', // 👈 use this custom TS config
+            },
         ],
     },
     moduleNameMapper: {
