@@ -1,15 +1,14 @@
 import winston from 'winston';
 import DailyRotateFile from 'winston-daily-rotate-file';
-import chalk from 'chalk';
 import { serverConfig } from './index.js';
 
 // Helper functions for colored logging
 export const loggers = {
-    info: (message: string) => logger.info(chalk.blue.bold(message)),
-    success: (message: string) => logger.info(chalk.green(message)),
-    warning: (message: string) => logger.warn(chalk.yellow(message)),
-    error: (message: string) => logger.error(chalk.red(message)),
-    debug: (message: string) => logger.debug(chalk.magenta(message)),
+    info: (message: string) => logger.info(message),
+    success: (message: string) => logger.info(message),
+    warning: (message: string) => logger.warn(message),
+    error: (message: string) => logger.error(message),
+    debug: (message: string) => logger.debug(message),
 };
 
 export const logger = winston.createLogger({
