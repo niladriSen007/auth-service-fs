@@ -12,4 +12,6 @@ loadDotEnv();
 
 export const serverConfig: ServerConfig = {
     PORT: Number(process.env.PORT) || 4000,
+    NODE_ENV: process.env.NODE_ENV || 'development',
+    LOGGER_LEVEL: process.env.LOGGER_LEVEL || 'info',
 };
